@@ -1,0 +1,273 @@
+eq.png	=	relational	equal sign equality
+neq.png	\\neq	relational	not equal inequality
+greater.png	>	relational	greater than
+less.png	<	relational	less than
+leq.png	\\leq	relational	less than or equal
+geq.png	\\geq	relational	greater than or equal
+sim.png	\\sim	relational	similar tilde approximate approximation approximately logical not
+ll.png	\\ll	relational	much less than
+gg.png	\\gg	relational	much greater than
+doteq.png	\\doteq	relational	dot equal representation
+simeq.png	\\simeq	relational	approximately equal similar approximate
+subset.png	\\subset	relational	subset sub set
+supset.png	\\supset	relational	superset super set implication implies
+approx.png	\\approx	relational	approximately equal similar approximate
+asymp.png	\\asymp	relational	asymptotic
+subseteq.png	\\subseteq	relational	subset equal subgroup
+supseteq.png	\\supseteq	relational	superset equal super set
+cong.png	\\cong	relational	congruent approximate approximately equal congruence
+smile.png	\\smile	relational	smile
+equiv.png	\\equiv	relational	equivalent define defintion is modular congruence modulo
+frown.png	\\frown	relational	frown
+sqsubseteq.png	\\sqsubseteq	relational	square subset equal
+sqsupseteq.png	\\sqsupseteq	relational	square supset equal
+propto.png	\\propto	relational	proportional to
+bowtie.png	\\bowtie	relational	bowtie
+in.png	\\in	relational	in member element of
+ni.png	\\ni	relational	such that
+prec.png	\\prec	relational	predecessor precedes
+succ.png	\\succ	relational	successor succedes
+vdash.png	\\vdash	relational	inference derivable derived from infers
+dashv.png	\\dashv	relational	dash
+preceq.png	\\preceq	relational	predecessor precedes equal
+succeq.png	\\succeq	relational	successor succedes equal
+models.png	\\models	relational	models entails entailment
+perp.png	\\perp	relational	perpendicular orthogonal
+parallel.png	\\parallel	relational	parallel incomparable
+mid.png	\\mid	relational	where pipe bar
+plus.png	+	operator	plus add sum
+minus.png	-	operator	minus subtract difference
+factorial.png	!	operator	factorial
+pm.png	\\pm	operator	plus or minus
+mp.png	\\mp	operator	minus or plus
+times.png	\\times	operator	times multiply multiplication sign
+quotient.png	/	operator	quotient divide division
+div.png	\\div	operator	divide division sign
+cdot.png	\\cdot	operator	dot product inner product multiply multiplication times
+ast.png	\\ast	operator	asterisk convolution convoluted footnote
+star.png	\\star	operator	star
+dagger.png	\\dagger	operator	dagger footnote
+ddagger.png	\\ddagger	operator	double dagger footnote
+amalg.png	\\amalg	operator	amalgamation
+cap.png	\\cap	operator	set intersection
+cup.png	\\cup	operator	set union
+uplus.png	\\uplus	operator	set union plus
+sqcap.png	\\sqcap	operator	square set intersection
+sqcup.png	\\sqcup	operator	square set union
+vee.png	\\vee	operator	logical or
+wedge.png	\\wedge	operator	logical and wedge
+oplus.png	\\oplus	operator	circle plus direct sum kronecker sum
+ominus.png	\\ominus	operator	circle minus
+otimes.png	\\otimes	operator	circle times tensor product direct product kronecker product
+circ.png	\\circ	operator	circle function composition
+bullet.png	\\bullet	operator	bullet dark circle
+diamond.png	\\diamond	operator	diamond
+oslash.png	\\oslash	operator	circle divide slash
+odot.png	\\odot	operator	circle dot
+bigcirc.png	\\bigcirc	operator	big circle
+triangleleft.png	\\triangleleft	operator	left triangle normal subgroup ideal ring
+triangleright.png	\\triangleright	operator	right triangle
+bigtriangleup.png	\\bigtriangleup	operator	big upward triangle symmetric difference
+bigtriangledown.png	\\bigtriangledown	operator	big downward triangle
+setminus.png	\\setminus	set difference subtraction minus	\N
+wr.png	\\wr	operator	wr
+sum.png	\\sum	operator	sum summation
+int.png	\\int	operator	integral integrate
+oint.png	\\oint	operator	surface integral integrate
+prod.png	\\prod	operator	product
+coprod.png	\\coprod	operator	coproduct co-product
+bigcap.png	\\bigcap	operator	big set intersection
+bigcup.png	\\bigcup	operator	big set union
+bigsqcup.png	\\bigsqcup	operator	big square set union
+bigvee.png	\\bigvee	operator	big logical or
+bigwedge.png	\\bigwedge	operator	big logical and wedge
+bigodot.png	\\bigodot	operator	big circle dot
+bigotimes.png	\\bigotimes	operator	big circle times
+bigoplus.png	\\bigoplus	operator	big circle plus
+biguplus.png	\\biguplus	operator	big union plus
+percent.png	\\%	symbol	percent
+infty.png	\\infty	symbol	infinity
+triangle.png	\\triangle	symbol	triangle
+angle.png	\\angle	symbol	angle
+aleph.png	\\aleph	symbol	aleph
+hbar.png	\\hbar	symbol	hbar planck's constant
+imath.png	\\imath	symbol	imaginary number
+jmath.png	\\jmath	symbol	imaginary number
+ell.png	\\ell	symbol	cursive l script
+wp.png	\\wp	symbol	wp script
+Re.png	\\Re	symbol	real part
+Im.png	\\Im	symbol	imaginary part
+prime.png	\\prime	symbol	prime derivative
+emptyset.png	\\emptyset	symbol	empty set
+nabla.png	\\nabla	symbol	del
+surd.png	\\surd	symbol	quadratic surd
+partial.png	\\partial	symbol	partial derivative
+top.png	\\top	symbol	tee top
+bot.png	\\bot	symbol	bottom coprime comparable
+forall.png	\\forall	symbol	for all universal quantifier
+exists.png	\\exists	symbol	there exists existential quantifier
+neg.png	\\neg	symbol	logical negation
+flat.png	\\flat	symbol	musical flat
+natural.png	\\natural	symbol	musical natural
+sharp.png	\\sharp	symbol	musical sharp
+backslash.png	\\backslash	symbol	backslash set complement set difference
+clubsuit.png	\\clubsuit	symbol	clubs cards
+diamondsuit.png	\\diamondsuit	symbol	diamonds cards
+heartsuit.png	\\heartsuit	symbol	hearts cards
+spadesuit.png	\\spadesuit	symbol	spades cards
+ldots.png	\\ldots	symbol	ellipsis ellipses lower dots
+vdots.png	\\vdots	symbol	vertical dots ellipsis ellipses
+cdots.png	\\cdots	symbol	center dots ellipsis ellipses
+ddots.png	\\ddots	symbol	diagonal dots ellipsis ellipses
+alpha.png	\\alpha	greek	greek alpha
+beta.png	\\beta	greek	greek beta
+gamma.png	\\gamma	greek	greek gamma
+delta.png	\\delta	greek	greek delta
+epsilon.png	\\epsilon	greek	greek epsilon
+varepsilon.png	\\varepsilon	greek	greek epsilon
+zeta.png	\\zeta	greek	greek zeta
+eta.png	\\eta	greek	greek eta
+theta.png	\\theta	greek	greek theta
+vartheta.png	\\vartheta	greek	greek theta
+iota.png	\\iota	greek	greek iota
+kappa.png	\\kappa	greek	greek kappa
+lambda.png	\\lambda	greek	greek lambda wavelength
+mu.png	\\mu	greek	greek mu mass
+nu.png	\\nu	greek	greek nu frequency
+xi.png	\\xi	greek	greek xi
+pi.png	\\pi	greek	greek pi
+varpi.png	\\varpi	greek	greek pi
+rho.png	\\rho	greek	greek rho density
+varrho.png	\\varrho	greek	greek rho
+sigma.png	\\sigma	greek	greek sigma
+varsigma.png	\\varsigma	greek	greek sigma
+tau.png	\\tau	greek	greek tau time
+upsilon.png	\\upsilon	greek	greek upsilon
+phi.png	\\phi	greek	greek phi wave function wavefunction
+varphi.png	\\varphi	greek	greek phi wave function wavefunction
+chi.png	\\chi	greek	greek chi spinor
+psi.png	\\psi	greek	greek psi wave function wavefunction
+omega.png	\\omega	greek	greek omega angular velocity
+Gamma.png	\\Gamma	greek	greek gamma connection
+Delta.png	\\Delta	greek	greek delta change
+Theta.png	\\Theta	greek	greek theta
+Lambda.png	\\Lambda	greek	greek lambda cosmological constant
+Xi.png	\\Xi	greek	greek xi
+Pi.png	\\Pi	greek	greek pi
+Sigma.png	\\Sigma	greek	greek sigma
+Upsilon.png	\\Upsilon	greek	greek upsilon
+Phi.png	\\Phi	greek	greek phi
+Psi.png	\\Psi	greek	greek psi
+Omega.png	\\Omega	greek	greek omega ohms
+gets.png	\\gets	arrow	left arrow gets assignment
+to.png	\\to	arrow	right arrow leads to
+leftarrow.png	\\leftarrow	arrow	left arrow
+Leftarrow.png	\\Leftarrow	arrow	double left arrow if
+rightarrow.png	\\rightarrow	arrow	right arrow
+Rightarrow.png	\\Rightarrow	arrow	double right arrow implies implication
+leftrightarrow.png	\\leftrightarrow	arrow	double sided arrow
+Leftrightarrow.png	\\Leftrightarrow	arrow	double sided double arrow if and only if iff logical equivalence equivalent
+mapsto.png	\\mapsto	arrow	maps to
+hookleftarrow.png	\\hookleftarrow	arrow	hook left arrow
+leftharpoonup.png	\\leftharpoonup	arrow	half left arrow harpoon
+leftharpoondown.png	\\leftharpoondown	arrow	half left arrow harpoon
+rightleftharpoons.png	\\rightleftharpoons	arrow	right left half arrows
+longleftarrow.png	\\longleftarrow	arrow	long left arrow
+Longleftarrow.png	\\Longleftarrow	arrow	double long left arrow
+longrightarrow.png	\\longrightarrow	arrow	long right arrow
+Longrightarrow.png	\\Longrightarrow	arrow	double long right arrow
+longleftrightarrow.png	\\longleftrightarrow	arrow	long left right arrow
+Longleftrightarrow.png	\\Longleftrightarrow	arrow	double long left right arrow
+longmapsto.png	\\longmapsto	arrow	long maps to
+hookrightarrow.png	\\hookrightarrow	arrow	hook right arrow
+rightharpoonup.png	\\rightharpoonup	arrow	half right arrow
+rightharpoondown.png	\\rightharpoondown	arrow	half right arrow
+uparrow.png	\\uparrow	arrow	up arrow
+Uparrow.png	\\Uparrow	arrow	double up arrow
+downarrow.png	\\downarrow	arrow	down arrow
+Downarrow.png	\\Downarrow	arrow	double down arrow
+updownarrow.png	\\updownarrow	arrow	up down arrow
+Updownarrow.png	\\Updownarrow	arrow	double up down arrow
+nearrow.png	\\nearrow	arrow	up right arrow
+searrow.png	\\searrow	arrow	down right arrow
+swarrow.png	\\swarrow	arrow	down left arrow
+nwarrow.png	\\nwarrow	arrow	up left arrow
+hat.png	\\hat{x}	accent	hat accent
+check.png	\\check{x}	accent	check accent
+dot.png	\\dot{x}	accent	dot accent
+breve.png	\\breve{x}	accent	breve accent
+acute.png	\\acute{x}	accent	acute accent
+ddot.png	\\ddot{x}	accent	double dot accent
+grave.png	\\grave{x}	accent	grave accent
+tilde.png	\\tilde{x}	accent	tilde accent
+mathring.png	\\mathring{x}	accent	circle circular ring accent
+bar.png	\\bar{x}	accent	bar accent overbar mean average complex conjugate
+vec.png	\\vec{x}	accent	vector accent
+widehat.png	\\widehat{x+y}	accent	wide hat accent
+widetilde.png	\\widetilde{x+y}	accent	wide tilde accent
+curly.png	\\{ x \\}	bracket	curly bracket set
+bars.png	\\| x \\|	bracket	double bar
+lfloor.png	\\lfloor	bracket	left floor
+rfloor.png	\\rfloor	bracket	right floor
+lceil.png	\\lceil	bracket	left ceiling
+rceil.png	\\rceil	bracket	right ceiling
+langle.png	\\langle	bracket	left angle bracket
+rangle.png	\\rangle	bracket	right angle bracket
+sqrt.png	\\sqrt{x}	other	square root
+root.png	\\sqrt[n]{x}	other	nth root
+frac.png	\\frac{x}{y}	other	fraction division divide quotient
+exp.png	x^y	other	exponent power superscript
+subscript.png	\\epsilon_0	other	subscript
+average.png	\\left\\langle x \\right\\rangle	other	average expectation value
+degree.png	x^\\circ	other	degrees
+norm.png	\\| x \\|	other	norm magnitude modulus length distance size
+abs.png	| x |	other	absolute value modulus length distance size
+lagrangian.png	\\mathcal{L}	other	lagrangian
+hamiltonian.png	\\mathcal{H}	other	hamiltonian
+hermitian.png	x^\\dagger	other	hermitian conjugate
+integral.png	\\int_0^\\infty e^x\\ dx	other	definite integral integrate integration
+derivative.png	\\frac{df}{dx}	other	derivative
+partialder.png	\\frac{\\partial f}{\\partial x}	other	partial derivative
+bold.png	\\mathbf{x}	other	math bold
+bra.png	\\langle \\psi |	other	dirac bra
+ket.png	| \\psi \\rangle	other	dirac ket
+braket.png	\\langle \\phi | \\psi \\rangle	other	dirac bracket braket
+matrixel.png	\\langle \\phi | x | \\psi \\rangle	other	dirac matrix element
+curl.png	\\vec\\nabla \\times \\mathbf{E}	other	curl
+grad.png	\\vec\\nabla \\Phi	other	gradient
+divergence.png	\\vec\\nabla \\cdot \\mathbf{E}	other	divergence
+laplacian.png	\\nabla^2 \\rho	other	laplacian
+transpose.png	A^T	other	matrix transpose
+binom.png	\\binom{x}{y}	other	binomial coefficient combination
+sqsupset.png	\\sqsupset	relational	square superset sup set
+blacksquare.png	\\blacksquare	symbol	black square dark
+Box.png	\\Box	operator	box square
+reals.png	\\mathbb{R}	other	reals
+integers.png	\\mathbb{Z}	other	integers
+rationals.png	\\mathbb{Q}	other	rationals
+complex.png	\\mathbb{C}	other	complex
+naturals.png	\\mathbb{N}	other	naturals
+Diamond.png	\\Diamond	operator	diamond
+Join.png	\\Join	symbol	join
+leadsto.png	\\leadsto	arrow	leads to arrow
+lhd.png	\\lhd	operator	left triangle normal subgroup ideal ring
+rhd.png	\\rhd	operator	right triangle
+unlhd.png	\\unlhd	operator	left triangle equal normal subgroup ideal ring
+unrhd.gid	\\unrhd	operator	right triangle equal
+mho.png	\\mho	symbol	upside-down omega
+sqsubset.png	\\sqsubset	relational	square subset sub set
+sqsupset.png	\\sqsupset	relational	square superset sup set
+leqslant.png	\\leqslant	relational	less than or equal
+geqslant.png	\\geqslant	relational	greater than or equal
+triangleq.png	\\triangleq	relational	define definition
+therefore.png	\\therefore	symbol	therefore thus
+varpropto.png	\\varpropto	relational	proportional to
+between.png	\\between	relational	between
+varnothing.png	\\varnothing	symbol	empty set nothing
+bigstar.png	\\bigstar	symbol	big black dark star
+blacktriangle.png	\\blacktriangle	symbol	black triangle
+blacktriangledown.png	\\blacktriangledown	symbol	black triangle
+blacklozenge.png	\\blacklozenge	symbol	black diamond
+complement.png	\\complement	symbol	complement
+matrix.png	\\left(\\begin{array}{cc} a & b \\\\ c & d \\end{array}\\right)	other	matrix matrices
+section.png	\\S	symbol	section footnote

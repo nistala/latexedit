@@ -1,0 +1,170 @@
+
+
+/* Space out content a bit */
+body {
+  padding-top: 20px;
+}
+
+/* Everything but the jumbotron gets side spacing for mobile first views */
+.header,
+.marketing,
+.footer {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* Custom page header */
+.header {
+  border-bottom: 1px solid #e5e5e5;
+}
+/* Make the masthead heading the same height as the navigation */
+.header h3 {
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 40px;
+  padding-bottom: 19px;
+}
+
+/* Custom page footer */
+.footer {
+  padding-top: 19px;
+  color: #777;
+  border-top: 1px solid #e5e5e5;
+}
+
+/* Customize container */
+@media (min-width: 768px) {
+  .container {
+    width: 100%;
+  }
+}
+.container-narrow > hr {
+  margin: 30px 0;
+}
+
+/* Main marketing message and sign up button */
+.jumbotron {
+  text-align: center;
+  border-bottom: 1px solid #e5e5e5;
+}
+.jumbotron .btn {
+  font-size: 21px;
+  padding: 14px 24px;
+}
+
+/* Supporting marketing content */
+.marketing {
+  margin: 40px 0;
+}
+.marketing p + h4 {
+  margin-top: 28px;
+}
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+  /* Remove the padding we set earlier */
+  .header,
+  .marketing,
+  .footer {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  /* Space out the masthead */
+  .header {
+    margin-bottom: 30px;
+  }
+  /* Remove the bottom border on the jumbotron for visual effect */
+  .jumbotron {
+    border-bottom: 0;
+  }
+}
+
+/**
+ * Custom styles
+ */
+.typeinarea {
+  width: 100%;
+}
+
+h3 a {
+  text-decoration: none;
+}
+
+h3 a:hover {
+  text-decoration: none;
+}
+
+#inputarea {
+  height: 100vh;
+  box-shadow: none;
+  font-weight: normal;
+  font-family: "Courier New", Courier, monospace;
+  white-space: pre;
+  word-wrap: normal;
+}
+
+.right-border {
+  border-right: 1px solid #ccc;
+}
+
+.top-menu {
+  margin-left: 100px;
+}
+
+.editor-type-select {
+  width: 150px;
+  display: inline-block;
+  margin-left: 10px;
+}
+
+.header {
+  margin-bottom: 0px;
+}
+
+.top-pad {
+  padding-top: 10px;
+  max-height: 100vh;
+  overflow: auto;
+}
+
+#autocomplete-div {
+  position: absolute;
+  width: 200px;
+  top: 100px;
+  background: white;
+  left: 200px;
+}
+
+.autocomplete-word {
+  border: 1px solid #ccc;
+  border-bottom: none;
+  padding: 2px;
+}
+
+.autocomplete-word.last {
+  border-bottom: 1px solid #ccc;
+}
+
+.autocomplete-word:last-child {
+  border-bottom: 1px solid #ccc;
+}
+
+.autocomplete-word.selected {
+  background: #ddd;
+}
+
+.autocomplete-word:hover {
+  cursor: pointer;
+}
+
+.center-align {
+  text-align: center;
+}
+
+.super-large {
+  font-size: 80px;
+}
+
+.small-pad-right {
+  margin-left: 10px;
+}

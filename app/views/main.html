@@ -1,0 +1,50 @@
+<div class="text-viewer">
+    <div class="row">
+      <div class="col-sm-6 right-border top-pad" id="editor">
+          <label for="latex-word" class="typeinarea">
+            <div>
+              <label>Template:
+                <select class="form-control editor-type-select" ng-model="editorType">
+                  <option selected>Formula</option>
+                  <option >Assignment</option>
+                  <option>Empty</option>
+                </select>
+              </label>
+              <span class="btn btn-primary pull-right" ng-click="refreshOutput()">
+                <span class="glyphicon glyphicon-play" aria-hidden="true"></span> Run</span>
+            </div>
+            <textarea id="inputarea" type="text" class="form-control" ng-model="userinput" ng-change="inputChange()" ng-keydown="bindKey($event)" spellcheck="false">
+            </textarea>
+          </label>
+      </div>
+      <div class="col-sm-6 top-pad">
+        <div class="btn btn-primary pull-right small-pad-right" ng-click="showError = !showError">
+          <span class="glyphicon glyphicon-chevron-down" aria-hidden="true" ng-show="!showError"></span>
+          <span class="glyphicon glyphicon-chevron-up" aria-hidden="true" ng-show="showError"></span>
+            Toggle errors
+        </div>       
+        <form class="form-inline" role="form" method="POST" action="/getpdf">
+          <input type="hidden" value="{{userinput}}" name="data" />
+          <button type="submit" class="btn btn-primary pull-right">
+            <span class="glyphicon glyphicon-download" aria-hidden="true"></span>
+            Download PDF</button>
+        </form>
+        <div style="clear:both"></div>
+        <img src="/images/loading.gif" ng-if="pending" style="width: 100%"/>
+        <div ng-if="showError">
+          <div ng-if="errorStr.length">Something went wrong and we can't compile your latex.</div>
+          <a style="cursor: pointer" ng-click="showErrorLog = !showErrorLog">Toggle logs</a>
+          <pre ng-if="showErrorLog && errorStr.length">{{ errorStr }} </pre>
+        </div>
+        <div ng-repeat="file in files" ng-if="folder && files">
+          <img ng-src="/images/output/{{folder}}/{{file}}" />
+        </div>
+      </div>
+    </div>
+</div>
+<div id="autocomplete-div">
+  <div ng-repeat="word in latexWords" class="autocomplete-word" ng-class="{selected: $index === selectedRow, last: $last}" ng-click="handleSelect(word)" ng-mouseover="setAutocompleteSelected($index)">
+    <span class="latexWord">{{word}}</span>
+    <img ng-src="/images/symbols/{{getImg(word)}}.png" ng-if="imageExists(word)"/>
+  </div>
+<div>
