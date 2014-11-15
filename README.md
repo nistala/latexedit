@@ -1,24 +1,14 @@
-grunt-express-angular-example
+LatexFiddle
 =============================
 
-Sample app that shows the usage of [grunt-express](https://github.com/blai/grunt-express) v1.0.
+LaTeX is hard. LaTeXFiddle makes it easier
+--------------------------------------------
+Writing something simple using LaTeX for your homework or project used to involve downloading the tex distribution and figuring out how to make things work on the commandline or downloading expensive software. LaTeXFiddle is a no sign up, no download, no hassle LaTeX editor for testing out your LaTeX scripts. You get:
+- Easy to use LaTeX editor
+- Autocomplete for basic LaTeX commands
+- LaTeX Renderer
+- LaTeX templates
+- Download PDF
+- Error viewer
 
-### Highlights
-
- * Based on @bford's [generator-angular](https://github.com/yeoman/generator-angular)
- * Authentication implementation based on @davemo's [end-to-end-with-angularjs](https://github.com/davemo/end-to-end-with-angularjs)
- * The sample implementation allows total separation of express server and angular app (e.g. the server piece could be refactored out to a different NPM module)
- 
-
-### How to run it
-```
-git clone git@github.com:blai/grunt-express-angular-example.git
-cd grunt-express-angular-example
-npm install
-bower install
-grunt server
-```
-
-#### Issues
-
-Unfortunately, with option `serverreload` set to `true`, `grunt-express` will start the server asynchronously in a child process from the `watch` task, which is run after the `open`. So if you see a 404 page in browser after doing `grunt server`, just wait to see the server started message show up in the terminal and refresh the browser to see the app.
+LatexFiddle uses the default Linux Tex Distribution.
