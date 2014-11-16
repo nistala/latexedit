@@ -6,11 +6,15 @@ var exec = require('child_process').exec;
 var mkdirp = require('mkdirp');
 var ncp = require('ncp').ncp;
 var rmdir = require('rimraf');
-
 var app = express();
 var passport = require('passport');
-
 var Authentication = require('./authentication');
+
+// Parse data and init.
+var Parse = require('parse').Parse;
+Parse.initialize(process.env.PARSE_APP_ID, process.env.PARSE_APP_KEY);
+var UrlEntry = Parse.Object.extend("UrlEntry");
+var query = new Parse.Query(UrlEntry);
 
 var DEST_FOLDER = __dirname + '/../app/images/output/';
 
@@ -47,6 +51,62 @@ app.get('/user', Authentication.ensureAuthenticated, function(req, res, next) {
   return res.json(req.session.user);
 });
 
+/**
+ * API to get data from a URL based on URL ID and version ID.
+ */
+app.get('/getUrl/:urlId/:versionId', function (req, res, next) {
+
+  // Check version id first.
+  if (isNaN(req.params.versionId)) {
+    res.status(500).send('Incorrect version id sent.');
+  }
+
+  var urlId = req.params.urlId;
+  var versionId = parseInt(req.params.versionId);
+  query.equalTo('url', urlId);
+  query.equalTo('version', versionId);
+  query.find({
+    success: function (result) {
+      if (result.length) {
+        res.send(result[0]);
+      } else {
+        res.status(500).send('There seems to be a problem with the URL.');
+      }
+    },
+    error: function (object, error) {
+      res.status(500).send('Could not find URL');
+    }
+  });
+});
+
+app.post('/saveSession', function (req, res, next) {
+  if (!req.body.latex || !req.body.url) {
+    var errrr = 'no data specified in request';
+    console.error(errrr);
+    res.status(400).send(errrr);
+    return;
+  }
+
+  var latex = req.body.latex;
+  var version = Math.floor(Math.random() * (100000 - 1000 + 1)) + 1000;
+  var url = req.body.url;
+
+  var urlEntry = new UrlEntry({
+    data: latex,
+    version: version,
+    url: url
+  });
+  urlEntry.save(null, {
+
+    success: function (urlEntry) {
+      res.send(urlEntry);
+    },
+    error: function (urlEntry, error) {
+      res.status(500).send('Problem saving session.')
+    }
+  });
+});
+
 app.post('/getpdf', function (req, res, next) {
   if (!('data' in req.body)) {
     var errrr = 'no data specified in request';
@@ -77,15 +137,17 @@ app.post('/getpdf', function (req, res, next) {
       return;
     }
 
-    exec('pdflatex -output-directory='+fileDir + ' ' + insideFile, function (err) {
+    exec('pdflatex -output-directory='+fileDir + ' ' + insideFile, {
+      timeout: 5000
+    }, function (err) {
       if (err) {
         console.error('Could not convert to pdf ' + err);
-        res.status(500).send(err);
+        res.status(500).send('Could not convert to pdf');
         cleanUp(fileDir);
+        return;
       }
       var pdfName = insideFile + '.pdf';
       res.download(pdfName, 'download.pdf', function (err) {
-        console.log('here');
         cleanUp(fileDir);
       });
     });

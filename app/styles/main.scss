@@ -1,4 +1,20 @@
+/**
+ * Bootstrap addons
+ */
+.glyphicon-refresh-animate {
+    -animation: spin 1s infinite linear;
+    -webkit-animation: spin2 1s infinite linear;
+}
 
+@-webkit-keyframes spin2 {
+    from { -webkit-transform: rotate(0deg);}
+    to { -webkit-transform: rotate(360deg);}
+}
+
+@keyframes spin {
+    from { transform: scale(1) rotate(0deg);}
+    to { transform: scale(1) rotate(360deg);}
+}
 
 /* Space out content a bit */
 body {
@@ -101,6 +117,7 @@ h3 a:hover {
   font-family: "Courier New", Courier, monospace;
   white-space: pre;
   word-wrap: normal;
+  line-height: 1.5;
 }
 
 .right-border {
@@ -167,4 +184,8 @@ h3 a:hover {
 
 .small-pad-right {
   margin-left: 10px;
+}
+
+a.link-button {
+  border: 1px solid #428bca;
 }

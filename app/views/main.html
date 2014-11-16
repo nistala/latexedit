@@ -5,13 +5,18 @@
             <div>
               <label>Template:
                 <select class="form-control editor-type-select" ng-model="editorType">
-                  <option selected>Formula</option>
-                  <option >Assignment</option>
+                  <option>Formula</option>
+                  <option>Assignment</option>
                   <option>Empty</option>
                 </select>
               </label>
-              <span class="btn btn-primary pull-right" ng-click="refreshOutput()">
-                <span class="glyphicon glyphicon-play" aria-hidden="true"></span> Run</span>
+              <span class="btn btn-primary pull-right small-pad-right" ng-click="refreshOutput()">
+                <span class="glyphicon glyphicon-play" aria-hidden="true"></span> Run
+              </span>
+              <span class="btn btn-primary pull-right" ng-click="saveSession()">
+                <span class="glyphicon glyphicon-save" aria-hidden="true" ng-show="!isSaving"></span>
+                <span class="glyphicon glyphicon-refresh glyphicon-refresh-animate" aria-hidden="true" ng-show="isSaving"></span> Save
+              </span>
             </div>
             <textarea id="inputarea" type="text" class="form-control" ng-model="userinput" ng-change="inputChange()" ng-keydown="bindKey($event)" spellcheck="false">
             </textarea>
