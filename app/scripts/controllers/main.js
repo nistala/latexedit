@@ -284,6 +284,8 @@ angular.module('webApp')
           var txtToAdd = jQuery('.autocomplete-word.selected span').text();
           e.preventDefault();
           enterWord(txtToAdd);  
+        } else {
+          resetAutocomplete();
         }
         
       } else if (keyCode === escape) {
