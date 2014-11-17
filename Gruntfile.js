@@ -19,6 +19,7 @@ module.exports = function (grunt) {
     dist: 'dist'
   };
 
+
   try {
     yeomanConfig.app = require('./bower.json').appPath || yeomanConfig.app;
   } catch (e) {}
@@ -65,11 +66,11 @@ module.exports = function (grunt) {
         }
       }
     },
-    // open: {
-    //   server: {
-    //     url: 'http://localhost:<%= express.options.port %>'
-    //   }
-    // },
+    open: {
+      server: {
+        url: 'http://localhost:<%= express.options.port %>'
+      }
+    },
     clean: {
       dist: {
         files: [{
@@ -280,9 +281,11 @@ module.exports = function (grunt) {
     }
   });
 
+  
+
   grunt.registerTask('server', function (target) {
     if (target === 'dist') {
-      return grunt.task.run(['build', 'open', 'express:dist:keepalive']);
+      return grunt.task.run(['build', /** 'open', **/ 'express:dist:keepalive']);
     }
 
     grunt.task.run([
