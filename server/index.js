@@ -7,6 +7,7 @@ var mkdirp = require('mkdirp');
 var ncp = require('ncp').ncp;
 var rmdir = require('rimraf');
 var app = express();
+var server = require('http').createServer(app);
 var passport = require('passport');
 var Authentication = require('./authentication');
 
@@ -25,6 +26,7 @@ app.use(function staticsPlaceholder(req, res, next) {
   return next();
 });
 
+app.use(express.static(path.join(path.normalize(__dirname + '/..'), 'dist')));
 app.use(express.cookieParser());
 app.use(express.session({ secret: 'i am not telling you' }));
 app.use(express.bodyParser());
@@ -252,5 +254,9 @@ function cleanUp (fileDir) {
     }
   });
 }
+
+server.listen(8000, '127.0.0.1', function () {
+  console.log('Express server listening on %d, in %s mode', 8000, app.get('env'));
+});
 
 module.exports = app;
